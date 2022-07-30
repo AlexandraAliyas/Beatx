@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 //import { useNavigate } from "react-router-dom";
 import Button3 from './Button3.js';
-import './home.css';
+// import './home.css';
 
 
 
@@ -21,15 +21,15 @@ const Home = () => {
 
   return (
     <div className="App">
-      <div className="App-header">
+      <div className="App-header w-screen bg-gradient-to-t from-blue-200 to-indigo-900">
         <div>
            
           <div
-            className="Mood bg-gradient-to-r from-indigo-500 via-purple-600 to-purple-700 ..."
+            className="Mood"
             style={{
             //   height: "320px",
               height: "100vh",
-              width: "18em",
+              // width: "100vw",
               display: "grid",
             //   grid-column: 1/span 3,
              // backgroundColor: "rgb(24, 23, 23)",
@@ -38,11 +38,11 @@ const Home = () => {
               color: "white",
             }}
           > <span> </span>
-            <div className="title-font">YOUR MOOD NOW:
-                <Button3 mood="Happy"/>
-                <Button3 mood="Sad"/>
-                <Button3 mood="Angry"/>
-                <Button3 mood="Excited"/>
+            <div className="title-font">What's Your Choice..?:
+                <Button3 mood="playlist"/>
+                <Button3 mood="Heartbeat"/>
+                <Button3 mood="How are you feeling?"/>
+                {/* <Button3 mood="Excited"/> */}
                 </div>
           </div>
           <p style={{ color: "white" }}>{data.mood}</p>

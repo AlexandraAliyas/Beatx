@@ -2,8 +2,8 @@ import React from 'react'
 
 const Login = (props) => {
     return(
-<div class="flex items-center justify-center w-screen h-screen bg-gray-700 sm:px-6">
-    <div class="flex items-center justify-center max-w-sm p-4 div w-screen h-screen flex-col bg-gradient-to-r from-indigo-500 via-purple-600 to-purple-700 ... rounded-md shadow-md sm:p-6">
+<div class="flex items-center justify-center w-screen h-screen bg-gradient-to-t from-blue-200 to-indigo-900 sm:px-6">
+    <div class="flex items-center justify-center max-w-sm p-4 div w-screen h-[70vh] flex-col rounded-md shadow-md sm:p-6">
         <div class="flex items-center justify-center">
             <span class="text-xl font-medium text-white">Login</span>
         </div>
@@ -35,8 +35,12 @@ const Login = (props) => {
                 </div>
             </div>
             <div class="mt-6">
-                <button type="button" class="w-full px-4 py-2 text-sm text-center bg-gradient-to-r from-purple-600 via-purple-200 to-purple-500 text-center hover:from-deep-purple-700-accent hover:from-indigo-800 hover:to-indigo-800 ...">Sign
-                    in</button>
+                <button type="button" class="w-full px-4 py-2 text-sm text-center rounded-md bg-gradient-to-r from-indigo-800 via-indigo-200 to-indigo-800 text-center hover:from-deep-purple-700-accent hover:from-indigo-800 hover:to-indigo-800 ...">Login
+                    </button>
+            </div>
+            <div class="mt-6">
+                <button type="button" class="w-full px-4 py-2 text-sm text-center rounded-md bg-gradient-to-r from-indigo-800 via-indigo-200 to-indigo-800 text-center hover:from-deep-purple-700-accent hover:from-indigo-800 hover:to-indigo-800 ...">Sign
+                    Up</button>
             </div>
         </form>
     </div>

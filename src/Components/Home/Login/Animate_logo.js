@@ -3,10 +3,10 @@ import "../../Animate_logo.css";
 function Animate_logo() { 
   const name=["B","E","A","T","X"];
   return ( 
-    <>
-      <div class=" flex items-center w-screen h-screen flex-col justify-center bg-gradient-to-r from-indigo-500 via-purple-600 to-purple-700 ">
+    <div className="flex flex-col items-center justify-center w-screen h-screen bg-gradient-to-t from-blue-200 to-indigo-900 sm:px-6">
+      {/* <div class=" flex items-center justify-center max-w-sm p-4 div w-screen h-screen flex-col bg-gradient-to-t from-blue-200 to-indigo-900 "> */}
       {/* <div class=" bg-gradient-to-r from-indigo-500 via-purple-600 to-purple-700 ... "> */}
-      <div className="waviy" > 
+      <div className="waviy"> 
       
       {name.map((n,index)=>(
         <span style={{ "--i": `${index+1}` }}>{n}</span>
@@ -29,11 +29,11 @@ function Animate_logo() {
     {/* </div> */}
      <br/>
       <div className="tagline">
-    Let Your Beat With Us</div>
+    Let Your Heart Beat With Us</div>
     
       </div>
       
-    </> 
+    // </div> 
   ); 
 } 
  
