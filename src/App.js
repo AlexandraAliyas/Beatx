@@ -5,6 +5,7 @@ import Animate_logo from './Components/Home/Login/Animate_logo.js'
 import Home from './Components/Home/Home';
 import Signup from './Components/Home/Signup.js'
 import Mainframe from './Components/Home/Mainframe.js'
+import Heartbeat from './Components/Home/Heartbeat.js'
 import { useState, useEffect } from 'react'
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
     <Home/>
     <Signup/>
     <Mainframe/>
+    <Heartbeat/>
     </>
   );
 }
