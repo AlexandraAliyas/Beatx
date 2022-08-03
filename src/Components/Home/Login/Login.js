@@ -18,8 +18,9 @@ export default function Login() {
       setLoading(true)
       await login(emailRef.current.value, passwordRef.current.value)
       console.log("before redire");
-      window.location = "/";
+      window.location = "/Home";
     } catch { 
+      setError("Failed to log in")
       console.log('error')
     }
 
@@ -53,6 +54,7 @@ export default function Login() {
       <div className="w-100 text-center mt-2">
          Need an account? <a href="/signup">Sign Up</a> 
       </div>
+      {error}
     </>
   )
 }

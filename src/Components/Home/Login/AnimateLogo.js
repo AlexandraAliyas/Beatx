@@ -15,7 +15,7 @@ function AnimateLogo() {
         <br />
         <div className="tagline">
           Let Your Heart Beat With Us</div>
-
+          <button onClick={() => (window.location = '/login')}>Login</button>
       </div>
 
     // </div>

@@ -24,7 +24,7 @@ export default function Signup() {
       setLoading(true)
       await signup(emailRef.current.value, passwordRef.current.value)
       console.log("before redirte");
-      window.location = "/login.js";
+      window.location = "/login";
       // history.push("/")
     } catch {
       setError("Failed to create an account")
