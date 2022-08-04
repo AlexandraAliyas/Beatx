@@ -52,3 +52,9 @@
     font-size: 1rem;
     text-transform: uppercase; 
 }
+#loginstyle{
+    color:#fff !important;
+    font-family:'Alfa Slab One', cursive;
+    /* background-color: Black; */
+    font-size:2rem;
+}

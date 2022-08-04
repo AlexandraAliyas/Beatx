@@ -1,5 +1,6 @@
 import "../../Animate_logo.css";
 
+
 function AnimateLogo() {
   const name = ["B", "E", "A", "T", "X"];
   return (
@@ -9,13 +10,13 @@ function AnimateLogo() {
       <div className="waviy">
 
         {name.map((n, index) => (
-          <span style={{ "--i": `${index + 1}` }}>{n}</span>
+          <span style={{ "--i": "${index + 1}" }}>{n}</span>
         ))}
 
         <br />
         <div className="tagline">
           Let Your Heart Beat With Us</div>
-          <button onClick={() => (window.location = '/login')}>Login</button>
+          <button style={{color:"white",}} className='ml-20' id="loginstyle" onClick={() => (window.location = '/login')}>Login</button>
       </div>
 
     </div>

@@ -31,17 +31,20 @@ const Heartbeat = (props) => {
         <main className="flex justify-center min-h-screen bg-gradient-to-t from-blue-200 to-indigo-900 p-5">
             <div>
                 <img src={Heartx} alt="" />
-                <a href="https://mythrillfiction.com/" target="_blank text-indigo-900">Your Heartbeat is :</a>
-                <div></div>
-                <div className="card my-5" onMouseEnter={getFitbitData}>
+                <a className='ml-[110px]' href="https://mythrillfiction.com/" target="_blank text-indigo-900">Your Heartbeat is :</a>
+                <div className="my-5 card ml-20" onMouseEnter={getFitbitData}>
                     {fitbitData['time']} , {fitbitData['value']}
                 </div>
-                <div className="card" onClick={checker}>
-                    Suggested Music
-                </div>
-
+                <div class="relative max-w-xs py-2 px-5 ml-20 font-medium text-white group" onClick={checker}>
+<span class="absolute inset-0 w-full h-full transition-all duration-300 ease-out transform translate-x-0 -skew-x-12 bg-indigo-500 grougroupp-hover:bg-indigo-700 group-hover:skew-x-12"></span>
+<span class="absolute inset-0 w-full h-full transition-all duration-300 ease-out transform skew-x-12 bg-indigo-700 group-hover:bg-indigo-500 -hover:-skew-x-12"></span>
+<span class="absolute bottom-0 left-0 hidden w-10 h-20 transition-all duration-100 ease-out transform -translate-x-8 translate-y-10 bg-indigo-600 -rotate-12"></span>
+<span class="absolute bottom-0 right-0 hidden w-10 h-20 transition-all duration-100 ease-out transform translate-x-10 translate-y-8 bg-indigo-400 -rotate-12"></span>
+ <span class="relative ml-20 max-w-xs">Suggested Music</span>
+</div>
 
             </div>
+            
         </main>
 
     )

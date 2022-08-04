@@ -27,27 +27,29 @@ export default function ForgotPassword() {
 
   return (
     <>
-      <Card>
-        <Card.Body>
-          <h2 className="text-center mb-4">Password Reset</h2>
+      <div className="flex h-screen justify-center items-center bg-gradient-to-t from-blue-200 to-indigo-900 ">
+        {/* <Card.Body> */}
+        <div className="bg-gradient-to-t from-blue-200 to-indigo-900  drop-shadow-md rounded-md flex-col space-y-4  max-w-md box-border">
+          <h2 className="text-center mb-4 text-white text-xl font-bold mt-5 mb-10">Password Reset</h2>
           {error && <Alert variant="danger">{error}</Alert>}
           {message && <Alert variant="success">{message}</Alert>}
           <Form onSubmit={handleSubmit}>
-            <Form.Group id="email">
-              <Form.Label>Email</Form.Label>
+            <Form.Group id="email" className="max-w-md mx-10">
+              <Form.Label className="text-white text-center font-bold text-md ml-[0rem] mr-[0.5rem]">Email</Form.Label>
               <Form.Control type="email" ref={emailRef} required />
             </Form.Group>
-            <Button disabled={loading} className="w-100" type="submit">
+            <Button disabled={loading} type="submit" className="text-indigo-900 text-center font-bold text-md mt-5 ml-[5.9rem]">
               Reset Password
             </Button>
           </Form>
-          <div className="w-100 text-center mt-3">
+          <div className="w-100 text-center mt-30 text-indigo-900 text-center font-bold text-md">
             <a href="/login">Login</a>
           </div>
-        </Card.Body>
-      </Card>
-      <div className="w-100 text-center mt-2">
+        {/* </Card.Body> */}
+      <div className="w-100 text-center mt-30 text-indigo-900 text-center font-bold text-md">
         Need an account? <a href="/signup">Sign Up</a>
+      </div>
+      </div>
       </div>
     </>
   )
