@@ -36,6 +36,10 @@ function Profile() {
         <Container>
             <div className={"Profile"}>
                 <div className="top-profile">
+                    <Avatar variant={"rounded"} src={require("../assets/img/avatar2.jpg").default}
+                            style={{width: "150px", height: "150px"}}>
+                        B12
+                    </Avatar>
                     <div className="profile-detail">
                         <h3>Team 12</h3>
                         <span className={"profile-playlist"}>
