@@ -18,7 +18,7 @@ function AnimateLogo() {
           <button onClick={() => (window.location = '/login')}>Login</button>
       </div>
 
-    // </div>
+    </div>
   );
 }
 

@@ -11,6 +11,7 @@ const Home = () => {
 
   const [mood, setMood] = useState('');
 
+
 //   useEffect(() => {
 //     axios.get(http://127.0.0.1:5000).then((res) => {
 //       const persons = res.data;
@@ -39,10 +40,9 @@ const Home = () => {
             }}
           > <span> </span>
             <div className="title-font">What's Your Choice..?:
-                <Button3 mood="playlist"/>
-                <Button3 mood="Heartbeat"/>
-                <Button3 mood="How are you feeling?"/>
-                {/* <Button3 mood="Excited"/> */}
+                <Button3 fun1={()=>window.location = '/musichome'} mood="playlist"/>
+                <Button3 fun1={()=>window.location = '/heartbeat'} mood="Heartbeat"/>
+                <Button3 fun1={()=>window.location = '/mainframe'} mood="How are you feeling?"/>
                 </div>
           </div>
           <p style={{ color: "white" }}>{data.mood}</p>
